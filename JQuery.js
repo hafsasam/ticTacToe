@@ -51,6 +51,8 @@ $(document).ready(function() {
 	     if($("#c1").attr('value')=="oui" && $("#c2").attr('value')=="oui" && $("#c3").attr('value')=="oui" &&
 	       $("#c1").attr('class') == joueur && $("#c2").attr('class') == joueur && $("#c3").attr('class') == joueur )
 	     {
+            var audio = new Audio('audio/V.mp3');
+            audio.play();
 
              vex.dialog.confirm({
                  message: "Congratulations ! The winner is "+joueur,
@@ -60,13 +62,17 @@ $(document).ready(function() {
                      }
                  }
              })
+
              end = true;
 
 	     } 
 	     // 1 4 7
 	     if($("#c1").attr('value')=="oui" && $("#c4").attr('value')=="oui" && $("#c7").attr('value')=="oui" &&
 	       $("#c1").attr('class') == joueur && $("#c4").attr('class') == joueur && $("#c7").attr('class') == joueur )
-	     {
+	     { 
+            var audio = new Audio('audio/V.mp3');
+            audio.play();
+
              vex.dialog.confirm({
                  message: "Congratulations ! The winner is "+joueur,
                  callback: function (value) {
@@ -81,6 +87,9 @@ $(document).ready(function() {
 	      if($("#c1").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c9").attr('value')=="oui" &&
 	       $("#c1").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c9").attr('class') == joueur )
 	     {
+            var audio = new Audio('audio/V.mp3');
+            audio.play();
+
              vex.dialog.confirm({
                  message: "Congratulations ! The winner is "+joueur,
                  callback: function (value) {
@@ -96,6 +105,9 @@ $(document).ready(function() {
 	      if($("#c2").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c8").attr('value')=="oui" &&
 	       $("#c2").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c8").attr('class') == joueur )
 	     {
+            var audio = new Audio('audio/V.mp3');
+            audio.play();
+
              vex.dialog.confirm({
                  message: "Congratulations ! The winner is "+joueur,
                  callback: function (value) {
@@ -110,6 +122,9 @@ $(document).ready(function() {
 	      if($("#c3").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c7").attr('value')=="oui" &&
 	       $("#c3").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c7").attr('class') == joueur )
 	     {
+            var audio = new Audio('audio/V.mp3');
+            audio.play();
+
              vex.dialog.confirm({
                  message: "Congratulations ! The winner is "+joueur,
                  callback: function (value) {
@@ -123,8 +138,12 @@ $(document).ready(function() {
 	     //3 6 9
 	      if($("#c3").attr('value')=="oui" && $("#c6").attr('value')=="oui" && $("#c9").attr('value')=="oui" &&
 	       $("#c3").attr('class') == joueur && $("#c6").attr('class') == joueur && $("#c9").attr('class') == joueur )
-	     {
+	     { 
+                var audio = new Audio('audio/V.mp3');
+                audio.play();
              vex.dialog.confirm({
+               
+
                  message: "Congratulations ! The winner is "+joueur,
                  callback: function (value) {
                      if (value) {
@@ -138,7 +157,11 @@ $(document).ready(function() {
 	      if($("#c4").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c6").attr('value')=="oui" &&
 	       $("#c4").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c6").attr('class') == joueur )
 	     {
+            var audio = new Audio('audio/V.mp3');
+            audio.play();
+
              vex.dialog.confirm({
+
                  message: "Congratulations ! The winner is "+joueur,
                  callback: function (value) {
                      if (value) {
@@ -152,7 +175,12 @@ $(document).ready(function() {
 	      if($("#c7").attr('value')=="oui" && $("#c8").attr('value')=="oui" && $("#c9").attr('value')=="oui" &&
 	       $("#c7").attr('class') == joueur && $("#c8").attr('class') == joueur && $("#c9").attr('class') == joueur )
 	     {
+
+            var audio = new Audio('audio/V.mp3');
+            audio.play();
+
              vex.dialog.confirm({
+
                  message: "Congratulations ! The winner is "+joueur,
                  callback: function (value) {
                      if (value) {
@@ -169,6 +197,10 @@ $(document).ready(function() {
          	(end == false)
             )
          	{
+                var audio = new Audio('audio/F.mp3');
+                 audio.play();
+
+
                 vex.dialog.confirm({
                     message: "Egalité",
                     callback: function (value) {
@@ -209,6 +241,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
