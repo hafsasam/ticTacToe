@@ -1,13 +1,20 @@
+body{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+}
 
 h1{
  		text-align: center;
- 		color :#ADD8E6;
+ 		color :#6f6f6f;
   }
 
+#h img,#f img{
+    margin-left: 20px;
+}
 
 table{
 	    margin-top:0;
-	    margin-left: 28%;
+	    margin-left: 29.5%;
         margin-right: 60%;
 	    width: 40%;
         height: 50%; 
@@ -23,7 +30,7 @@ td{
  	    width: 100px;
  	    padding: 10px;
  	    margin: 5px;
- 	    border : 3px #dcebdf solid;
+ 	    border : 2px #dcebdf solid;
         align-content: center;
   }
 
@@ -45,13 +52,13 @@ body{
 #h{
         float: right;
  		margin-right: 40px;
- 		margin-top: 450px;
+ 		margin-top: 400px;
 
   }
 
 #f{
  		float: left;
- 		margin-top: 450px;
+ 		margin-top: 400px;
  		margin-left: 100px;
   }
 
@@ -95,25 +102,3 @@ h3{
 
 
 
-.modal-body {padding: 2px 16px;}
-
-/* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #ADD8E6;
-    color: white;
-}
-
-/* Modal Content */
-#modal-content {
-    display: none;
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
