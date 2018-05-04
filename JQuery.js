@@ -3,7 +3,10 @@
  var end= false;
 $(document).ready(function() {
 
-       	
+
+    vex.dialog.buttons.YES.text = 'Replay ?'
+    vex.dialog.buttons.NO.text = 'Cancel'
+
     $("td").click(function() {
 
 
@@ -38,7 +41,14 @@ $(document).ready(function() {
 	       $("#c1").attr('class') == joueur && $("#c2").attr('class') == joueur && $("#c3").attr('class') == joueur )
 	     {
 
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 
 	     } 
@@ -46,14 +56,28 @@ $(document).ready(function() {
 	     if($("#c1").attr('value')=="oui" && $("#c4").attr('value')=="oui" && $("#c7").attr('value')=="oui" &&
 	       $("#c1").attr('class') == joueur && $("#c4").attr('class') == joueur && $("#c7").attr('class') == joueur )
 	     {
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 	     }
         // 1 5 9
 	      if($("#c1").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c9").attr('value')=="oui" &&
 	       $("#c1").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c9").attr('class') == joueur )
 	     {
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 	     } 
 	     // 2 5 8
@@ -61,35 +85,70 @@ $(document).ready(function() {
 	      if($("#c2").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c8").attr('value')=="oui" &&
 	       $("#c2").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c8").attr('class') == joueur )
 	     {
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 	     } 
 	     // 3 5 7
 	      if($("#c3").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c7").attr('value')=="oui" &&
 	       $("#c3").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c7").attr('class') == joueur )
 	     {
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 	     } 
 	     //3 6 9
 	      if($("#c3").attr('value')=="oui" && $("#c6").attr('value')=="oui" && $("#c9").attr('value')=="oui" &&
 	       $("#c3").attr('class') == joueur && $("#c6").attr('class') == joueur && $("#c9").attr('class') == joueur )
 	     {
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 	     } 
 	     // 4 5 6
 	      if($("#c4").attr('value')=="oui" && $("#c5").attr('value')=="oui" && $("#c6").attr('value')=="oui" &&
 	       $("#c4").attr('class') == joueur && $("#c5").attr('class') == joueur && $("#c6").attr('class') == joueur )
 	     {
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 	     } 
 	     // 7 8 9
 	      if($("#c7").attr('value')=="oui" && $("#c8").attr('value')=="oui" && $("#c9").attr('value')=="oui" &&
 	       $("#c7").attr('class') == joueur && $("#c8").attr('class') == joueur && $("#c9").attr('class') == joueur )
 	     {
-             swal("Congratulations", "The winner is "+joueur, "success");
+             vex.dialog.confirm({
+                 message: "Congratulations ! The winner is "+joueur,
+                 callback: function (value) {
+                     if (value) {
+                         location.reload();
+                     }
+                 }
+             })
              end = true;
 	     }
 	    
@@ -99,7 +158,14 @@ $(document).ready(function() {
          	(end == false)
             )
          	{
-                swal("Egalité", "", "info");
+                vex.dialog.confirm({
+                    message: "Egalité",
+                    callback: function (value) {
+                        if (value) {
+                            location.reload();
+                        }
+                    }
+                })
                 end = true;
 
 	  }
@@ -127,6 +193,10 @@ $(document).ready(function() {
         $(".temp").remove();
 
     });
+
+
+
+
 });
 
 
