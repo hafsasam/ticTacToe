@@ -14,7 +14,18 @@ $(document).ready(function() {
 
 	 if($(this).attr('value')=="oui")
       	
-	   {  alert("case déjà cochée");
+	   {
+           vex.dialog.alert({
+               message: "Case déjà cochée !!",
+               buttons: [
+                   $.extend({}, vex.dialog.buttons.YES, {
+                       text: 'Return to game'
+                   })
+               ],
+           }
+
+
+               );
        }
 	 else
 	   { 		
