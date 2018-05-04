@@ -3,28 +3,6 @@
  var end= false;
 $(document).ready(function() {
 
-
-    // Get the modal
-    var modal = document.getElementById('model-content');
-
-// Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-
-// When the user clicks on the button,replay game
-    btn.onclick = function() {
-        location.reload();
-    }
-
-
-// When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-
        	
     $("td").click(function() {
 
@@ -61,11 +39,7 @@ $(document).ready(function() {
 	     {
 
 
-             swal({title: "Congratulations", text:  "The winner is "+joueur", type: "success"},
-                     function(isConfirm) {
-                         if (isConfirm) {
-                             location.reload();
-                         }}});
+             swal("Congratulations", "The winner is "+joueur, "success");
              end = true;
 
 	     } 
