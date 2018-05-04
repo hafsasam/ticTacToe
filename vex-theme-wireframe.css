@@ -22,8 +22,8 @@
   .vex.vex-theme-wireframe .vex-content {
     font-family: "Helvetica Neue", sans-serif;
     background: #fff;
-    color: #000;
-    border: 2px solid #000;
+    color: #6f6f6f;
+    border: 2px solid #dcebdf;
     padding: 2em;
     position: relative;
     margin: 0 auto;
@@ -97,13 +97,13 @@
           -webkit-animation: none;
           animation: none; } }
     .vex.vex-theme-wireframe .vex-dialog-button.vex-dialog-button-primary {
-      background: #000;
+      background: #6f6f6f;
       color: #fff;
       border: 2px solid transparent; }
     .vex.vex-theme-wireframe .vex-dialog-button.vex-dialog-button-secondary {
       background: #fff;
       color: #000;
-      border: 2px solid #000; }
+      border: 2px solid #dcebdf; }
 
 .vex-loading-spinner.vex-theme-wireframe {
   height: 2.5em;
